@@ -1,0 +1,34 @@
+OBJECTS AND ITS REPRESENTATION IN JAVA SCRIPT;
+
+OBJECT:
+   It is most important data type and forms the building blocks for modern javascript. These objects are quiet different 
+from javascript's primitive data types(Number,String,Boolean,Null,undefined and symbol)in the sense that while these 
+primitive data types all store a single value each(depending on thier types).	
+
+    An object is a reference data type. Variables that are assigned a reference value are given a reference or a pointer to
+that value.That reference or pointer points to the location in memory where the object is stored.The variables don't 
+actually store the value.
+
+REPRESENTATION OF OBJECT IN JAVASCRIPT:
+    A JavaScript object has properties associated with it. A property of an object can be explained as a variable that is 
+attached to the object. Object properties are basically the same as ordinary JavaScript variables, except for the 
+attachment to objects. The properties of an object define the characteristics of the object. You access the properties of 
+an object with a simple dot-notation:
+    ex: objectName.propertyName
+
+    Like all JavaScript variables, both the object name (which could be a normal variable) and property name are case 
+sensitive. You can define a property by assigning it a value. For example, let’s create an object named myCar and give it 
+properties named make, model, and year as follows:
+
+var myCar = new Object();
+myCar.make = 'Ford';
+myCar.model = 'Mustang';
+myCar.year = 1969;
+
+Unassigned properties of an object are undefined (and not null).
+
+myCar.color; // undefined
+
+   Using the object.create method:
+      Objects also can be created using the Object.create() method. This method can be very useful,because it allows you to
+choose the prototype object for the object you want to create,without having to define a constructor function. 
